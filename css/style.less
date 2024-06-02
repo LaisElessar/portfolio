@@ -18,7 +18,7 @@ body{
             margin: 0;
         }    
 
-        @media(max-width: 720px) {
+        @media(max-width: 900px) {
             padding: 10px;
             flex-direction: row-reverse;
 
@@ -53,7 +53,7 @@ body{
                 }
             }
 
-            @media(max-width: 720px) { 
+            @media(max-width: 900px) { 
                 padding: 0;
                 display: block;
                 .site_nav_toggle{
@@ -86,7 +86,7 @@ body{
 
     main{
         
-        @media (max-width: 720px) {
+        @media (max-width: 900px) {
             h1{
                 font-size: 54px;
             }
@@ -120,11 +120,14 @@ body{
                 }
             }
 
-            @media(max-width: 720px) {
+            @media(max-width: 900px) {
                 flex-direction: column;    
                 .about-description{
                     padding: 0;
                     width: 100%;
+                }
+                img{
+                    margin-top: 50px;
                 }
             }
         }
@@ -136,7 +139,7 @@ body{
             }
 
             padding: 50px;
-            @media(max-width: 720px) {
+            @media(max-width: 900px) {
                 padding: 25px;
                 h1{
                     margin: 0;
@@ -145,7 +148,6 @@ body{
         }
         
         .about-section{
-            
             align-items: center;
        
             h1{
@@ -158,19 +160,31 @@ body{
                 #me{
                     width: 100%;
                     border-radius: 50%;
-                }                        
-                
-                
+                }
             }
 
             .skills{
                 margin-top: 50px;
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                text-align: center;
                 
-                @media(max-width: 720px) {
-                    flex-direction: column;;
+                @media(max-width: 1080px) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
                 }
+            }
+            
+            @media(max-width: 950px) {
+                .first-block{
+                    display: flex;
+                    flex-direction: column;
+
+                    .about-description{
+                        width: 80%;
+                    }
+                }    
             }
         }
 
@@ -182,8 +196,9 @@ body{
             .projects-list{
                 display: flex;
                 justify-content: center;
-                
-                @media(max-width: 720px) {
+                align-items: center;
+
+                @media(max-width: 900px) {
                     flex-direction: column;;
                     
                     .project-card{
@@ -209,7 +224,6 @@ body{
                             
                             img{
                                 width: 100%;
-            
                             }
                         }
 
@@ -217,8 +231,16 @@ body{
                             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                         }
 
-                        @media(max-width: 720px) {
+                        @media(max-width: 900px) {
                             width: 100%;
+                        }
+                        
+                        @media(min-width: 600px) and (max-width: 900px) {
+                            width: 400px;
+                        }
+
+                        @media (min-width: 800px) and (max-width: 810px) {
+                            width: 400px;
                         }
                     }
                 }
@@ -227,8 +249,8 @@ body{
         .contact-section{
                         
             .contact-list{
-                padding: 50px; 
                 margin: 0;
+                padding: 40px; 
                 border-radius: 30px;
                 background: rgba( 255, 255, 255, 0.35 );
                 backdrop-filter: blur(4px);
@@ -251,8 +273,25 @@ body{
                     display: flex;
                     
                     div{
+                        display: flex;
+                        align-items: center;
                         padding: 5px 0;
+                        
+                        img{
+                            margin: 0;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        &:first-of-type{
+                            margin-right: 20px;
+                        }
                     }
+                }
+                @media(max-width: 900px) {
+                    margin: 0 auto;
                 }
             } 
         }
