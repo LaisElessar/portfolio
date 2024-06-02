@@ -1,3 +1,4 @@
+// hamburger menu
 var mobileMenuIcon = document.querySelector(".button");
 var mobileMenu = document.querySelector('.site_nav_toggle');
 
@@ -9,3 +10,14 @@ mobileMenuIcon.onclick = function(){
     mobileMenu.classList.remove('active')
   }
 }
+
+//scroll effect
+document.querySelectorAll('.ancor').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
