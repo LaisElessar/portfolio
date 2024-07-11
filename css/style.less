@@ -188,9 +188,6 @@ body{
             }
         }
 
-        .projects-section, footer{
-            background-color: white;
-        }
         .projects-section{
 
             .projects-list{
@@ -302,6 +299,76 @@ body{
                     margin: 0 auto;
                 }
             } 
+        }
+        .center-slider .slick-slide{
+            color: #FFF;
+            margin: 0 15px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0.8);
+            transition: all 0.4s ease-in-out;
+            
+            figure{
+                background-color: #FFF;
+                padding: 30px;
+                border: 1px solid ;
+                
+                img{
+                    width: 70%; margin: 0 auto;
+                }
+            }
+            
+            .slide-item{
+                text-align: center;
+            }
+        }
+        .center-slider .slick-slide,
+        .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+            transform: scale(0.8, 0.8);
+            transition: all 0.4s ease-in-out;
+            
+        }
+        
+        /* Active center slide (You can change anything here for cenetr slide)*/
+        .center-slider .slick-center,
+        .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+            transform: scale(1.1);
+            color: #000;
+        }
+        .center-slider .slick-current.slick-active{
+            transform: scale(1.1);
+
+                article {
+                    .slide-item-content{
+                        display: block;
+                    }
+                }
+            }
+        div:not(.slick-current.slick-active){
+                
+            article{
+                .slide-item-content{
+                    display: none;
+                }
+            }
+        } 
+        
+        .slick-next, .slick-prev{
+            z-index: 5;
+        }
+
+        .slick-next{
+            right: 15px;
+        }
+
+        .slick-prev{
+            left: 15px;
+        }
+
+        .slick-next:before, .slick-prev:before{
+            color: #000;
+            font-size: 26px;
         }
 
     }
