@@ -10,6 +10,7 @@ mobileMenuIcon.onclick = function(){
     mobileMenu.classList.remove('active')
   }
 }
+
 //slide slick
 $(document).ready(function(){
   $('.center-slider').slick({
