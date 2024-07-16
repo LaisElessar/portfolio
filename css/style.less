@@ -4,10 +4,6 @@ body{
     margin: 0;
     font-family: lato, inter, sans-serif;
     
-    @media(max-width: 900px) {
-        background-size: auto;
-    }
-    
     .material-symbols-outlined{
         display: none;
     }
@@ -289,7 +285,17 @@ body{
         .slick-prev{
             left: 50px;
         }
-        
+
+        @media(max-width: 480px) {
+            .slick-next{
+                right: 40px;
+            }
+    
+            .slick-prev{
+                left: 20px;
+            }    
+        }
+               
         .slick-slider > .slick-next::before, .slick-slider > .slick-prev::before {
             color: #FFF !important;
             font-size: 45px;
@@ -300,5 +306,11 @@ body{
             font-size: 26px;
         }
 
+    }
+}
+
+.projects{
+    @media(max-width: 900px) {
+        background-size: auto;
     }
 }
