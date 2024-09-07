@@ -329,6 +329,10 @@ body{
 .grid-two-collmns{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media(max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .project-list{
@@ -363,6 +367,10 @@ body{
                 margin: 0;
             }
 
+            h2{
+                text-align: center;
+            }
+
             p{
                 padding: 0 50px;
             }
@@ -391,6 +399,24 @@ body{
         } 
             
     }
+
+    @media(max-width: 480px) {
+        grid-template-columns: 1fr;
+        width: 80%;
+
+        .card{
+            height: auto;
+            position: initial;
+            background-color: #000000bd;
+            margin-bottom: 30px;
+        }
+        .card-body{
+            position: initial !important;
+            background-color: transparent !important;
+            height: auto !important;
+            padding: 50px 0 !important;
+        }
+    }
 }
 
 
@@ -399,7 +425,6 @@ body{
     grid-template-columns: 1fr 1fr;
 
     div{
-        // border: 1px solid red;
         padding-right: 100px;
     }
 
@@ -409,5 +434,24 @@ body{
         img{
             width: 100%;
         }
+    }
+
+    @media(max-width: 480px) {
+        grid-template-columns: 1fr;
+
+        div{
+            padding-right: 0;
+        }
+    }
+}
+.contact-list{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .right{
+        margin-right: 30px;
+    }
+    @media(max-width: 480px) {
+        grid-template-columns: 1fr;
     }
 }
