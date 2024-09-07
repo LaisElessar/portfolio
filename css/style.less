@@ -97,7 +97,7 @@ body{
         
         h1{
             font-size: 48px;
-            margin: 20px 100px;
+            // margin: 20px 100px;
         }
 
         .page-name{
@@ -320,9 +320,18 @@ body{
         background-size: auto;
     }
 }
-.project-list{
+
+.section{
     width: 70%;
     margin: 0 auto;
+}
+
+.grid-two-collmns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -381,5 +390,24 @@ body{
             right: 0;
         } 
             
+    }
+}
+
+
+.first-about-section{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+
+    div{
+        // border: 1px solid red;
+        padding-right: 100px;
+    }
+
+    figure{
+        margin: 0;
+
+        img{
+            width: 100%;
+        }
     }
 }
