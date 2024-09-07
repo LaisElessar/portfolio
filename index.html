@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laís Reis</title>
-    <link rel="icon" type="image/x-icon" href="/src/logo.png">
+    <link rel="icon" type="image/x-icon" href="src/img/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <script src="js/less.js/less.js" type="text/javascript"></script>
@@ -13,7 +13,7 @@
     <header>
         <figure>
             <a href="#">
-                <img src="/src/logo.png" alt="Laís Reis logo" style="height: 59px; width: 69px;">
+                <img src="/src/img/logo.png" alt="Laís Reis logo" style="height: 59px; width: 69px;">
             </a>
         </figure>
         <nav class="site_nav_menu">
@@ -21,61 +21,81 @@
                 menu
             </span>
             <ul class="site_nav_toggle">
-                <li><a href="#" class="ancor">Inicio</a></li>
-                <li><a href="pages/projects.html" class="ancor">Projetos</a></li>
+                <li><a href="#" class="ancor" style="color: #d87093;">Projetos</a></li>
+                <li><a href="pages/sobre.html" class="ancor">Sobre</a></li>
+                <li><a href="src/document/LaisReisDeJesus.pdf" class="ancor">Currículo</a></li>
+                <li><a href="/pages/contatos.html" class="ancor">Contato</a></li>
+                <li>
+                    <a class="ancor" href="https://www.linkedin.com/in/la%C3%ADs-reis/" class="social-media">
+                        <img src="src/img/IconLinkedin.png" alt="" class="icon">
+                    </a>    
+                </li>
+                <li>
+                    <a class="ancor" href="https://github.com/LaisElessar" class="social-media">
+                        <img src="src/img/IconGithub.png" alt="" class="icon">
+                    </a>    
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="about">
-            <div class="first-block">
-                <div class="about-description">
-                    <h1>Olá, eu sou a Laís Reis </h1>
-                    <h3 class="sub-title">Desenvolvedora Front-End, UI/UX designer</h3>
-                    <h3>
-                        Com uma abordagem centrada no usuário, busco constantemente aprimorar minhas habilidades em projetar e desenvolver interfaces intuitivas e agradáveis. 
-                        Meus conhecimentos em desenvolvimento web, UI/UX Design e familiaridade com diversas ferramentas de design me permitem transformar ideias em realidade 
-                        digital. 
-                    </h3>
-                    <div class="social-media-icons">
-                        <a href="mailto:laisreisdejesus45@gmail.com" class="social-media">
-                            <img src="src/IconMail.png" alt="" class="icon">
-                        </a>
-                        <a href="https://www.linkedin.com/in/la%C3%ADs-reis/" class="social-media">
-                            <img src="src/IconLinkedin.png" alt="" class="icon">
-                        </a>
-                        <a href="https://github.com/LaisElessar" class="social-media">
-                            <img src="src/IconGithub.png" alt="" class="icon">
-                        </a>
+        <section class="project-list section">
+            <div class="card">
+                <img src="src/img/SemprePrimavera.png" alt="" >
+                <div class="card-body">
+                    <h3>UI design</h3>
+                    <h2>Sempre Primavera</h2>
+                    <p>
+                        O projeto Sempre Primavera é um protótipo de aplicativo para uma floricultura fictícia, 
+                        onde o mesmo busca tornar a experiência do usuário mais agradável através de uma interface mais minimalista. 
+                    </p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://www.figma.com/proto/yvxtCudyqjpDsVEC72fxUH/Sempre-Primavera?node-id=365-333&t=98evgIBg3eriYM7B-1&scaling=min-zoom&content-scaling=fixed&page-id=364%3A835">Estudo de Caso</a>
+                        <a target="_blank" href="https://www.figma.com/design/yvxtCudyqjpDsVEC72fxUH/Sempre-Primavera?node-id=184-895&t=eQU51XLXWzkTejtm-1">Protótipo</a>
                     </div>
-                    <a href="src/document/Currículo.pdf">CURRÍCULO</a>
                 </div>
-                <figure>
-                    <img id="me" src="src/lais.jpeg" alt="lais reis figura">
-                </figure>
             </div>
-            <div class="skills">
-                <figure>
-                    <img src="src/html.png" alt="Logo html" title="Logo html">
-                </figure>
-                <figure>
-                    <img src="src/css.png" alt="Logo css" title="Logo css">
-                </figure>
-                <figure>
-                    <img src="src/js.png" alt="Logo javascript" title="Logo javascript">
-                </figure>
-                <figure>
-                    <img src="src/sass.png" alt="Logo sass" title="Logo sass">
-                </figure>
-                <figure>
-                    <img src="src/ux.png" alt="Logo ux design" title="Logo ux design">
-                </figure>
-                <figure>
-                    <img src="src/git.png" alt="Logo git" title="Logo git">
-                </figure>
-                <figure>
-                    <img src="src/docker.png" alt="Logo docker" title="Logo docker">
-                </figure>
+            <div class="card" >
+                <img src="src/img/IngredienteSecreto.png" alt="" >
+                <div class="card-body">
+                    <h3>UI design</h3>
+                    <h2>Ingrediente Secreto</h2>
+                    <p>
+                        O projeto Ingrediente Secreto é um protótipo de site que foi desenvolvido com o intuito de 
+                        beneficiar estudantes de gastronomia, donas de casa e amantes da culinária oferecendo 
+                        tutoriais de receitas de forma simples e didática. 
+                    </p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://www.figma.com/proto/hycGU4DFLdB1geA8sFkzQe/Ingrediente-secreto?node-id=583-5705&t=L4u5CEOkg6G1KWEs-1&scaling=min-zoom&content-scaling=fixed&page-id=583%3A5699">Estudo de Caso</a>
+                        <a target="_blank" href="https://www.figma.com/design/hycGU4DFLdB1geA8sFkzQe/Ingrediente-secreto?node-id=36-1149&t=S8jkp938zTtJPxrW-1">Protótipo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/src/img/GuiadeMoteis.png" alt="" >
+                <div class="card-body">
+                    <h3>UI design</h3>
+                    <h2>Redesign Landing Page</h2>
+                    <p>
+                        O projeto é uma proposta de redesign da landing page da empresa Guia de Moteis. 
+                    </p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://www.figma.com/proto/ErcOM9mxSzXI0oHvh7CgkA/Proposta-de-Redesign?node-id=242-712&t=IlCz5MURqUM3Uw68-1&scaling=min-zoom&content-scaling=fixed&page-id=242%3A308">Estudo de Caso</a>
+                        <a target="_blank" href="https://www.figma.com/design/ErcOM9mxSzXI0oHvh7CgkA/Proposta-de-Redesign?node-id=0-1&t=sHJeAEgfFcBYRKzr-1">Protótipo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="src/img/NovoApp.png" alt="" >
+                <div class="card-body">
+                    <h3>UI/UX design</h3>
+                    <h2>App de contratação e treinamento</h2>
+                    <p>
+                        O projeto está em fase de desenvolvimento. 
+                    </p>
+                    <div class="project-links">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
