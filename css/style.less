@@ -1,6 +1,5 @@
 body{
-    background-image: url("../src/background.png");
-    background-size: cover;
+    background-color: #ffffff;
     margin: 0;
     font-family: lato, inter, sans-serif;
     
@@ -11,8 +10,9 @@ body{
     header {
         display: flex;
         justify-content: space-between;
-        padding: 10px 100px 0 100px;
+        padding: 10px 100px;
         align-items: center;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
         
         figure{
             margin: 0;
@@ -34,22 +34,24 @@ body{
         }
 
         .site_nav_menu{
-
             .site_nav_toggle{
                 display: flex;
                 list-style: none;
-                width: 40%;
                 text-transform: uppercase;
-
-                a {
-                    color: black;
-                    text-decoration: none;
-                    font-size: 18px;
-                    padding: 10px 20px;
-                    border: 1px solid transparent;
                 
-                    &:hover{
-                        border: 1px solid white;
+                li{
+                    display: flex;
+                    align-items: center;
+                    a {
+                        color: #646464;
+                        text-decoration: none;
+                        font-size: 18px;
+                        padding: 0 20px;
+                        border: 1px solid transparent;
+                        
+                        &:hover{
+                            color: #000000;
+                        }
                     }
                 }
             }
@@ -316,5 +318,68 @@ body{
 .projects{
     @media(max-width: 900px) {
         background-size: auto;
+    }
+}
+.project-list{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .card{
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+        img{
+            width: 100%;
+        }
+    
+        .card-body{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            background-color: #000000bd;
+            transition: 1s;
+
+            h3{
+                color: #d87093;
+                margin: 0;
+            }
+
+            p{
+                padding: 0 50px;
+            }
+
+            .project-links{
+                margin-top: 20px;
+
+                a{
+                    color: #000000;
+                    margin: 0 10px;
+                    padding: 15px;
+                    background-color: #ffffffa2;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: #FFF;
+                        background-color: #d87093;
+                    }
+                }
+            }
+        }
+    
+        &:hover .card-body{
+            right: 0;
+        } 
+            
     }
 }
