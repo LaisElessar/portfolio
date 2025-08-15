@@ -2,7 +2,8 @@ body{
     background-color: #ffffff;
     margin: 0;
     font-family: lato, inter, sans-serif;
-    
+    color: #3c3c3c;
+
     .material-symbols-outlined{
         display: none;
     }
@@ -125,6 +126,17 @@ body{
                     margin-bottom: 30px;
                 }
 
+                a{
+                    color: #FFF;
+                    display: inline-block;
+                    background-color: #d87093;
+                    margin: 10px 0;
+                    
+                    &:hover{
+                        background-color: #3c3c3c;
+                    }
+                }
+
                 div{
                     padding-right: 100px;
                 }
@@ -216,20 +228,6 @@ body{
         
                     .project-links{
                         margin-top: 20px;
-        
-                        a{
-                            color: #000000;
-                            margin: 0 10px;
-                            padding: 15px;
-                            background-color: #ffffffa2;
-                            border-radius: 5px;
-                            text-decoration: none;
-        
-                            &:hover{
-                                color: #FFF;
-                                background-color: #d87093;
-                            }
-                        }
                     }
                 }
             
@@ -271,5 +269,36 @@ body{
                 grid-template-columns: 1fr;
             }
         }
+
+        .button{
+            color: #000000;
+            margin: 0 10px;
+            padding: 15px;
+            background-color: #ffffffa2;
+            border-radius: 5px;
+            text-decoration: none;
+
+            &:hover{
+                color: #FFF;
+                background-color: #d87093;
+            }
+        }
+    }
+
+    .slider {
+      width: 70%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .slick-slide {
+      padding: 10px 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      white-space: nowrap; 
+      width: auto !important;
+    }
+    .slick-track {
+      display: flex;
+      align-items: center;
     }
 }
