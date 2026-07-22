@@ -36,3 +36,37 @@ window.onscroll = function() {
 backToTopButton.onclick = function() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+// project filter
+
+$('.filter-btn').on('click', function(){
+  let type = $(this).attr('id');
+  let boxes = $('.card');
+
+  $('.main-btn').removeClass('active');
+  $(this).addClass('active');
+
+  if(type == 'dev-btn'){
+    eachBoxes('dev', boxes);
+  }else if(type == 'ux-btn'){
+    eachBoxes('ux', boxes);
+  }else if(type == 'ui-btn'){
+    eachBoxes('ui', boxes);
+  }else{
+    eachBoxes('all', boxes);
+  }
+});
+
+function eachBoxes(type, boxes){
+  if(type == 'all'){
+    $(boxes).fadeIn();
+  }else{
+    $(boxes).each(function(){
+      if(!$(this).hasClass(type)){
+        $(this).fadeOut('slow');
+      }else{
+        $(this).fadeIn();
+      }
+    });
+  }
+}
