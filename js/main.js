@@ -70,3 +70,13 @@ function eachBoxes(type, boxes){
     });
   }
 }
+
+window.onscroll = function() {
+  const header = document.querySelector(".header");
+  
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+};

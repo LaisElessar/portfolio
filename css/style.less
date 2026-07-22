@@ -3,10 +3,22 @@ html {
 }
 
 body{
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     margin: 0;
     font-family: lato, inter, sans-serif;
     color: #3c3c3c;
+    opacity:0;
+    animation:gridAppear 1.5s ease forwards;
+
+    @keyframes gridAppear{
+        from{
+            opacity:0;
+        }
+
+        to{
+            opacity:1;
+        }
+    }
 
     .material-symbols-outlined{
         display: none;
@@ -34,15 +46,19 @@ body{
     }
 
     header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: stretch;
+        z-index: 999;
         display: flex;
         justify-content: space-between;
-        padding: 10px 100px;
-        position: relative;
-        z-index: 2;
         align-items: center;
-        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-        background-color: #252525;
-        
+        padding: 10px 100px;
+        background: transparent;
+        box-shadow: none;
+        transition: all .35s ease;
+
         figure{
             margin: 0;
         }    
@@ -58,7 +74,7 @@ body{
             .material-symbols-outlined{
                 display: inline-block;
                 font-size: 36px;
-                color: #FFF;
+                color: #252525;
             }
         }
 
@@ -72,7 +88,7 @@ body{
                     display: flex;
                     align-items: center;
                     a {
-                        color: #ffff;
+                        color: #252525;
                         text-decoration: none;
                         font-size: 18px;
                         padding: 0 20px;
@@ -100,7 +116,7 @@ body{
                     top: 60px;
                     left: 0;
                     padding-left: 0;
-                    background-color: #252525;
+                    background-color: #fdfdfd;
                     
                     li{
                         a{
@@ -111,6 +127,17 @@ body{
                 }
             }
         }
+    }
+
+    header.scrolled{
+        background: rgba(255,255,255,.75);
+
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+
+        border-bottom:1px solid #ececec;
+
+        box-shadow:none;
     }
 
     main{
@@ -127,7 +154,7 @@ body{
         }
 
         p{
-            font-size: 1fr;
+            font-size: 1rem;
         }
 
         #sobre{
@@ -151,28 +178,39 @@ body{
         }
 
         .background{
-            background: url("../src/img/fundo.png") center/cover no-repeat;
-            position: relative;
-            height: 60vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            position: relative;
+            overflow: hidden;
+            min-height:80vh;
+            background:radial-gradient(ellipse at 20% 15%,rgba(216,112,147,.18), transparent 45%),
+            radial-gradient(ellipse at 85% 35%,rgba(170,215,255,.15),transparent 50%);
+        }
 
-            &::after {
-                content: "";
-                position: absolute;
-                inset: 0; /* cobre tudo */
-                background: 
-                    linear-gradient(to right, white 0%, transparent 10%, transparent 90%, white 100%),
-                    linear-gradient(to bottom, white 0%, transparent 10%, transparent 90%, white 100%);
-                pointer-events: none; /* não atrapalha cliques */
-            }
+        .background::before{
+            content:"";
+            position:absolute;
+            inset:0;
+
+            background-image:
+                linear-gradient(#ECECEC 1px, transparent 1px),
+                linear-gradient(90deg,#ECECEC 1px, transparent 1px);
+            
+            background-size:64px 64px;
+
+            opacity:.4;
         }
 
         .first-section{
+            position: relative;
+            top: 10rem;
+            z-index: 1;
             text-align: center;
             width: 60%;
-            
+            opacity: 0;
+            transform: translateY(25px);
+            animation: heroEntrance 1s ease forwards;
+
             h2{
                 color: #d87093;
             }
@@ -182,6 +220,18 @@ body{
         
                 div{
                     padding-right: 0;
+                }
+            }        
+
+            @keyframes heroEntrance {
+                from {
+                    opacity: 0;
+                    transform: translateY(25px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
                 }
             }
         }
@@ -242,7 +292,9 @@ body{
                 position: relative;
                 overflow: hidden;
                 cursor: pointer;
-        
+                border-radius: 14px;
+                box-shadow: 0 20px 40px rgba(0,0,0,.08);
+
                 img{
                     object-fit: cover;
                     width: 100%;
@@ -321,12 +373,17 @@ body{
     }
 
     //buttons                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    .button{
+        .ph{
+            font-size: 2rem;
+        }
+    }
 
     .btn{
         display: inline-block;
         margin-top: 25px;
         border: none;
-        border-radius: 50px;
+        border-radius: 14px;
         padding: 15px;
         text-decoration: none;
         transition: .5s;
@@ -369,6 +426,7 @@ body{
     .filters{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 1rem;
         margin: 2rem 0;
     }
