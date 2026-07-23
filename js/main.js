@@ -24,20 +24,6 @@ $('.slider').slick({
   variableWidth: true     
 });
 
-const backToTopButton = document.getElementById('backToTop');
-
-window.onscroll = function() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    backToTopButton.style.display = "block";
-  } else {
-    backToTopButton.style.display = "none";
-  }
-	};
-
-backToTopButton.onclick = function() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
-}
-
 // project filter
 
 $('.filter-btn').on('click', function(){
@@ -72,6 +58,9 @@ function eachBoxes(type, boxes){
   }
 }
 
+// BackToTopButton and Header
+const backToTopButton = document.getElementById('backToTop');
+
 window.onscroll = function() {
   const header = document.querySelector(".header");
   
@@ -80,7 +69,18 @@ window.onscroll = function() {
   } else {
     header.classList.remove("scrolled");
   }
+
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+
 };
+
+backToTopButton.onclick = function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 //noise effect
 
