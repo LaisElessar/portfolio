@@ -3,7 +3,7 @@ html {
 }
 
 body{
-    background-color: #f9f9f9;
+    background-color: #fbfbfb;
     margin: 0;
     font-family: lato, inter, sans-serif;
     color: #3c3c3c;
@@ -33,7 +33,7 @@ body{
 		font-size: 18px;
 		border: none;
 		outline: none;
-		background-color: #d87093;
+		background-color: #8F0069;
 		color: white;
 		cursor: pointer;
 		padding: 15px;
@@ -95,7 +95,7 @@ body{
                         border: 1px solid transparent;
                         
                         &:hover{
-                            color: #d87093;
+                            color: #8F0069;
                         }
                     }
                 }
@@ -143,7 +143,7 @@ body{
     main{
                 
         h1, h1 > i{
-            font-size: clamp(1.8rem, 5vw, 4.24rem);
+            font-size: clamp(1.9rem, 5vw, 4.24rem);
         }
         
         h1,h2,h3{
@@ -157,7 +157,7 @@ body{
 
         h3{
             margin-top: 0;
-            color: #d87093;
+            color: #8F0069;
             span{
                 color: #646464;
             }
@@ -195,7 +195,7 @@ body{
                     h2{
                         font-size: 3rem; 
                         margin: 0;
-                        color: #d87093;
+                        color: #8F0069;
                     }
                 }
                 
@@ -219,7 +219,6 @@ body{
                     .experience{
                         p{
                             margin-top: 5px;
-                            color: #646464;
                         }
 
                         .item{
@@ -239,7 +238,7 @@ body{
                             height:10px;
 
                             border-radius:50%;
-                            background:#d87093;
+                            background:#8F0069;
                         }
 
                         .item::after{
@@ -284,6 +283,34 @@ body{
             min-height:80vh;
             background:radial-gradient(ellipse at 20% 15%,rgba(216,112,147,.18), transparent 45%),
             radial-gradient(ellipse at 85% 35%,rgba(170,215,255,.15),transparent 50%);
+        }
+
+        .background canvas{
+            position:absolute;
+            inset:0;
+            width:100%;
+            height:100%;
+            mix-blend-mode:soft-light;
+            opacity:0.8;
+            pointer-events:none;
+        }
+
+        canvas{
+            opacity:.08;
+
+            mask-image: linear-gradient(
+                to bottom,
+                black 0%,
+                black 60%,
+                transparent 100%
+            );
+
+            -webkit-mask-image: linear-gradient(
+                to bottom,
+                black 0%,
+                black 60%,
+                transparent 100%
+            );
         }
 
         .background::before{
@@ -355,7 +382,7 @@ body{
                     }
 
                     i{
-                        background-color: #d87093;
+                        background-color: #8F0069;
                         border-radius: 50px;
                         width: 50px;
                         height: 50px;
@@ -374,7 +401,7 @@ body{
             }
 
             @media(max-width: 900px) {
-                padding: 25px;
+                padding: 10px;
                 
                 h1{
                     margin: 0;
@@ -415,7 +442,7 @@ body{
                     transition: 1s;
         
                     h3{
-                        color: #d87093;
+                        color: #8F0069;
                         margin: 0;
                     }
         
@@ -486,11 +513,12 @@ body{
         padding: 15px;
         text-decoration: none;
         transition: .5s;
+        font-weight: 700;
     }
 
     .pink-black-btn{
         color: #FFF;
-        background-color: #d87093;
+        background-color: #8F0069;
         margin: 10px 0;
         
         &:hover{
@@ -503,7 +531,7 @@ body{
         background-color: #252525;
 
         &:hover{
-            background-color: #d87093;
+            background-color: #8F0069;
         }
     }
 
@@ -513,13 +541,13 @@ body{
         
         &:hover{
             color: #FFF;
-            background-color: #d87093;
+            background-color: #8F0069;
         }
     }
 
     .active{
         color: #FFF;
-        background-color: #d87093;
+        background-color: #8F0069;
     }
 
     .filters{
@@ -540,15 +568,22 @@ body{
     #contato{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+        gap: 30px;
+
         div{
             padding: 0;
         }
 
+        h1{
+            margin-top: 0;
+        }
+
         .form{
             border-radius: 10px;
-            background-color: #d8709359;
+            background-color: #ff00bb40;
             padding: 30px 50px;
+            width: 50%;
+            margin: 0 auto;
 
             h2{
                 color: #252525;
@@ -596,6 +631,12 @@ body{
         @media(max-width: 480px) {
             grid-template-columns: 1fr;
         }
+        
+        @media (max-width: 768px) {
+            .form{
+                width: auto;
+            }            
+        }
     }
 
     footer{
@@ -641,7 +682,7 @@ body{
     }
 
     i{
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .slick-slide {

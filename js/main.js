@@ -10,6 +10,7 @@ mobileMenuIcon.onclick = function(){
     mobileMenu.classList.remove('active')
   }
 }
+
 $('.slider').slick({
   speed: 3000,            
   autoplay: true,
@@ -80,3 +81,25 @@ window.onscroll = function() {
     header.classList.remove("scrolled");
   }
 };
+
+//noise effect
+
+const canvas = document.createElement("canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+document.querySelector(".background").appendChild(canvas);
+
+const imageData = ctx.createImageData(canvas.width, canvas.height);
+
+for (let i = 0; i < imageData.data.length; i += 4) {
+    const value = Math.random() > 0.3 ? 255 : 0;
+    imageData.data[i] = value;
+    imageData.data[i + 1] = value;
+    imageData.data[i + 2] = value;
+    imageData.data[i + 3] = 12;
+}
+
+ctx.putImageData(imageData, 0, 0);
