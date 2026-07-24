@@ -3,165 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio da Laís Reis, web designer formada em ciência da computação e pós graduada em Design Digital.">
+    <meta name="description" content="Portfólio de Laís Reis, designer e desenvolvedora frontend.">
     <title>Laís Reis</title>
     <link rel="icon" type="image/x-icon" href="src/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://kit.fontawesome.com/6847c4e3f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
     <link rel="stylesheet/less" type="text/css" href="css/style.less" />
     <script src="js/less.js/less.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
 </head>
 <body>
-    <header>
+    <header class="header">
         <figure>
             <a href="#">
-                <img src="/src/img/logo.png" alt="Laís Reis logo" style="height: 59px; width: 69px; filter: invert();">
+                <img src="/src/img/logo.png" alt="Laís Reis logo" style="height: 59px; width: 69px;">
             </a>
         </figure>
         <nav class="site_nav_menu">
             <span class="material-symbols-outlined button">
-                menu
+                <i class="ph ph-list"></i>
             </span>
             <ul class="site_nav_toggle">
                 <li><a href="#sobre" class="ancor">Sobre</a></li>
                 <li><a href="#projeto" class="ancor">Projetos</a></li>
                 <li><a href="#contato" class="ancor">Contato</a></li>
                 <li>
-                    <a class="ancor" aria-label="icone do linkedin, clique para acessar" href="https://www.linkedin.com/in/la%C3%ADs-reis/" class="social-media">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <a class="ancor" target="_blank" href="https://www.linkedin.com/in/la%C3%ADs-reis/" class="social-media" aria-label="icone do linkedin">
+                        <i class="ph ph-linkedin-logo"></i>
                     </a>    
                 </li>
                 <li>
-                    <a class="ancor" aria-label="icone do github, clique para acessar" href="https://github.com/LaisElessar" class="social-media">
-                        <i class="fa-brands fa-github"></i>
+                    <a class="ancor" target="_blank" href="https://github.com/LaisElessar" class="social-media" aria-label="icone do github">
+                        <i class="ph ph-github-logo"></i>
                     </a>    
+                </li>
+                <li>
+                    <a href="https://www.behance.net/laisreis2" target="_blank" aria-label="icone do behance">
+                        <i class="ph ph-behance-logo"></i>
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="sobre" class="section background">
-            <div class="first-about-section">
-                <div>
-                    <h1>Olá, eu sou a Laís Reis</h1>
-                    <h2>UI/UX Designer</h2>
-                    <p>
-                        Com uma abordagem centrada no usuário, busco constantemente aprimorar minhas 
-                        habilidades em projetar e desenvolver interfaces intuitivas e agradáveis. Meus 
-                        conhecimentos em desenvolvimento web, UI/UX Design e 
-                        familiaridade com diversas ferramentas de design me permitem transformar ideias em realidade digital.  
-                    </p>
-                    <a class="button" target="_blank" href="https://drive.google.com/file/d/1GHTjT2JYpdlB93pwTIXIB5rPE8Sm4UJM/view?usp=sharing">Currículo</a>
-                </div>
-                <figure>
-                    <img src="/src/img/eu.png" alt="Fotografia do rosto de Laís Reis com o background rosa">
-                </figure>
+        <section id="#" class="section background hero" style="width: auto;">
+            <div class="first-section">
+                <h1>Projetando Experiências Digitais Acessíveis e Intuitivas.</h1>
+                <p>
+                    Desenvolvo interfaces que combinam usabilidade, acessibilidade e tecnologia 
+                    para transformar necessidades em soluções digitais.  
+                </p>
+                <a class="btn pink-black-btn" href="#projeto">Conheça meu trabalho</a>
+                <a class="btn black-pink-btn" href="#contato">Vamos conversar</a>
             </div>
         </section>
+        
         <section class="slider">
-            <div>UI/UX Design</div>
-            <div>Prototipagem no Figma</div>
-            <div>Acessibilidade Digital</div>
-            <div>Design Responsivo</div>
-            <div>Testes de Usabilidade</div>
-            <div>Front-end Development</div>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>Javascript</div>
+            <ul class="slider-track">
+                <li>UI/UX Design</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Prototipagem no Figma</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Acessibilidade Digital</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Design Responsivo</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Testes de Usabilidade</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Front-end Development</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>HTML</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>CSS</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>JavaScript</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <!-- Duplica tudo abaixo -->
+
+                <li>UI/UX Design</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Prototipagem no Figma</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Acessibilidade Digital</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Design Responsivo</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Testes de Usabilidade</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>Front-end Development</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>HTML</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>CSS</li>
+                <i class="ph-fill ph-star-four"></i>
+
+                <li>JavaScript</li>
+                <i class="ph-fill ph-star-four"></i>
+            </ul>
         </section>
         <section id="projeto" class="section">
             <h2>Meus Projetos</h2>
+            <div class="filters" id="filter-btn-box">
+                <button class="btn main-btn filter-btn gray-pink-btn active" id="all-btn">Todos</button>
+                <button class="btn main-btn filter-btn gray-pink-btn" id="dev-btn">Desenvolvimento</button>
+                <button class="btn main-btn filter-btn gray-pink-btn" id="ux-btn">User Experience</button>
+                <button class="btn main-btn filter-btn gray-pink-btn" id="ui-btn">User Interface</button>
+            </div>
             <div class="project-list">
-                <div class="card" >
-                    <img src="src/img/TerraStep.png" alt="Mockup da landing page TerraStep em uma tela de um computador de mesa mac e um smartphone" >
+                <div class="card ui dev">
+                    <figure>
+                        <img src="src/img/Landing-Pagr.webp" alt="Mockup da landing page TerraStep em uma tela de um computador de mesa mac e um smartphone" >
+                    </figure>
                     <div class="card-body">
-                        <h3>UI design</h3>
-                        <h2>Landing Page TerraStep</h2>
+                        <h3>Landing Page TerraStep</h3>
                         <p>
                             O projeto é uma landing page para uma agencia de viagem de aventura fictícia. 
                         </p>
-                        <div class="project-links">
-                            <a class="button" target="_blank" href="https://www.behance.net/gallery/235239861/Landing-Page-TerraStep">Ver projeto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div class="">
+                            <a class="btn black-pink-btn" target="_blank" href="https://www.behance.net/gallery/235239861/Landing-Page-TerraStep">Ver projeto</a>
                             <!-- <a target="_blank" href="https://www.figma.com/proto/hycGU4DFLdB1geA8sFkzQe/Ingrediente-secreto?node-id=36-1150&node-type=canvas&t=Pg0zQpibZyPVAuFO-1&scaling=min-zoom&content-scaling=fixed&page-id=36%3A1149&starting-point-node-id=36%3A1150">Protótipo</a> -->
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="src/img/contaLeve.png" alt="Mockup 3d de 1 smartphone Iphone 13 mini exibindo a tela de dashboard do app ContaLeve" >
+                <div class="card dev">
+                    <figure>
+                        <img src="src/img/onePage.webp" alt="Mockup da landing page TerraStep em uma tela de um computador de mesa mac e um smartphone" >
+                    </figure>
                     <div class="card-body">
-                        <h3>UI/UX design</h3>
-                        <h2>App ContaLeve</h2>
+                        <h3>Landing Page hDC Agency</h3>
+                        <p>
+                            O projeto é uma landing page para uma agencia de tecnologia fictícia. 
+                        </p>
+                        <div class="">
+                            <a class="btn black-pink-btn" target="_blank" href="https://one-page-sepia.vercel.app/">Ver projeto</a>
+                            <!-- <a class="btn black-pink-btn" target="_blank" href="https://www.figma.com/proto/hycGU4DFLdB1geA8sFkzQe/Ingrediente-secreto?node-id=36-1150&node-type=canvas&t=Pg0zQpibZyPVAuFO-1&scaling=min-zoom&content-scaling=fixed&page-id=36%3A1149&starting-point-node-id=36%3A1150">Protótipo</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card ux ui">
+                    <figure>
+                        <img src="src/img/AppContaLeve.webp" alt="Mockup 3d de 2 smartphones Iphone 13 mini exibindo a tela de chat com a IA e outra exibindo a tela de boas vindas do app ContaLeve" >
+                    </figure>
+                    <div class="card-body">
+                        <h3>App ContaLeve</h3>
                         <p>
                             O ContaLeve é um app que ajuda os consumidores de energia elétrica a economizarem de forma consciente. 
                         </p>
-                        <div class="project-links">
-                            <a class="button" target="_blank" href="https://www.behance.net/gallery/222678079/App-ContaLeve">Ver projeto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <!-- <a class="button" target="_blank" href="https://www.figma.com/proto/jT9TmnrlGl3tMjjRTuNti3/APP-CONSUMO-DE-ENERGIA?node-id=801-2815&p=f&t=9Sz8eeiKloc4gEiL-1&scaling=scale-down&content-scaling=fixed&page-id=801%3A2814&starting-point-node-id=801%3A2815">Protótipo</a> -->
+                        <div>
+                            <a class="btn black-pink-btn" target="_blank" href="https://www.behance.net/gallery/222678079/App-ContaLeve">Ver projeto</a>
+                            <!-- <a class="btn gray-pink-btn" target="_blank" href="https://www.figma.com/proto/jT9TmnrlGl3tMjjRTuNti3/APP-CONSUMO-DE-ENERGIA?node-id=801-2815&p=f&t=9Sz8eeiKloc4gEiL-1&scaling=scale-down&content-scaling=fixed&page-id=801%3A2814&starting-point-node-id=801%3A2815">Protótipo</a> -->
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="/src/img/Lepidus.png" alt="Mockup do redesign do site da Lepidus Tecnologia em uma tela de computador mac" >
+                <div class="card ui">
+                    <figure>
+                        <img src="/src/img/Group 379 (1).webp" alt="Mockup do redesign de uma landing page do Guia de Moteis Go em um notebook e em um smartphone" >
+                    </figure>
                     <div class="card-body">
-                        <h3>UI design</h3>
-                        <h2>Novo Site Lepidus Tecnologia</h2>
+                        <!-- <h3>UI design</h3> -->
+                        <h3>Novo Site Lepidus Tecnologia</h3>
                         <p>
                             Projeto visual do novo site oficial da empresa Lepidus Tecnologia. 
                         </p>
-                        <div class="project-links">
-                            <a class="button" target="_blank" href="https://www.behance.net/gallery/220915111/Novo-Website-Lepidus-Tecnologia">Ver projeto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            <!-- <a class="button" target="_blank" href="https://www.figma.com/proto/GUC02g9EjL24d2w5GlCaKk/Novo-Site-Lepidus?node-id=192-60&p=f&t=Y41LHfeWFhjFnwQj-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=192%3A60&hide-ui=1">Protótipo</a> -->
+                        <div>
+                            <a class="btn black-pink-btn" target="_blank" href="https://www.behance.net/gallery/220915111/Novo-Website-Lepidus-Tecnologia">Ver projeto</a>
+                            <!-- <a class="btn gray-pink-btn" target="_blank" href="https://www.figma.com/proto/GUC02g9EjL24d2w5GlCaKk/Novo-Site-Lepidus?node-id=192-60&p=f&t=Y41LHfeWFhjFnwQj-8&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=192%3A60&hide-ui=1">Protótipo</a> -->
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="/src/img/GuiadeMoteis.png" alt="Mockup do redesign de uma landing page do Guia de Moteis Go em um notebook e em um smartphone" >
+                <div class="card ui">
+                    <figure>
+                        <img src="/src/img/GuiadeMoteis.webp" alt="Mockup do redesign de uma landing page do Guia de Moteis Go em um notebook e em um smartphone" >
+                    </figure>
                     <div class="card-body">
-                        <h3>UI design</h3>
-                        <h2>Redesign Landing Page</h2>
+                        <h3>Redesign Landing Page</h3>
                         <p>
                             O projeto é uma proposta de redesign da landing page da empresa Guia de Moteis. 
                         </p>
-                        <div class="project-links">
-                            <a class="button" target="_blank" href="https://www.behance.net/gallery/210389159/Redesign-Landing-Page">Ver projeto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div>
+                            <a class="btn black-pink-btn" target="_blank" href="https://www.behance.net/gallery/210389159/Redesign-Landing-Page">Ver projeto</a>
                             <!-- <a target="_blank" href="https://www.figma.com/proto/ErcOM9mxSzXI0oHvh7CgkA/Proposta-de-Redesign?node-id=80-1576&node-type=canvas&t=WHfqJSWFAgO8OSsl-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Protótipo</a> -->
                         </div>
                     </div>
                 </div>
-                <div class="card" >
-                    <img src="src/img/Ingrediente-Secreto.png" alt="Mockup do site Sempre Primavera em uma tela de um computador de mesa mac" >
+                <div class="card ui" >
+                    <figure>
+                        <img src="src/img/IngredienteSecreto.webp" alt="Mockup do site Sempre Primavera em uma tela de um computador de mesa mac" >
+                    </figure>
                     <div class="card-body">
-                        <h3>UI design</h3>
-                        <h2>Ingrediente Secreto</h2>
+                        <h3>Ingrediente Secreto</h3>
                         <p>
-                            O projeto Ingrediente Secreto é um protótipo de site que foi desenvolvido com o intuito de 
-                            beneficiar estudantes de gastronomia, donas de casa e amantes da culinária oferecendo 
-                            tutoriais de receitas de forma simples e didática. 
+                            Plataforma de receitas com tutoriais simples e didáticos. 
                         </p>
                         <div class="project-links">
-                            <a class="button" target="_blank" href="https://www.behance.net/gallery/207926229/Ingrediente-Secreto">Ver projeto <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a class="btn black-pink-btn" target="_blank" href="https://www.behance.net/gallery/207926229/Ingrediente-Secreto">Ver projeto</a>
                             <!-- <a target="_blank" href="https://www.figma.com/proto/hycGU4DFLdB1geA8sFkzQe/Ingrediente-secreto?node-id=36-1150&node-type=canvas&t=Pg0zQpibZyPVAuFO-1&scaling=min-zoom&content-scaling=fixed&page-id=36%3A1149&starting-point-node-id=36%3A1150">Protótipo</a> -->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contato" class="first-about-section">
+        <section id="sobre" class="section">
+            <div class="about-section">
+                <figure>
+                    <img src="/src/img/eu.webp" alt="Fotografia de Laís Reis">
+                </figure>
+                <div class="content">
+                    <div class="first-block">
+                        <div>
+                            <h2>Olá,</h2>
+                            <p>
+                                Me chamo <b>Laís Reis</b>, sou <b>UI/UX Designer</b> e <b>Desenvolvedora Front-end</b>, formada em <b>Ciência da Computação</b> e pós-graduada em <b>Design Digital</b>.
+                            </p>
+                            <p>    
+                                Minha experiência une tecnologia e design para criar interfaces intuitivas, acessíveis e funcionais. Tenho experiência com desenvolvimento web, prototipação e criação de interfaces centradas no usuário, buscando sempre equilibrar as necessidades das pessoas com os objetivos do negócio.
+                            </p>
+                            <p>    
+                                Além da formação acadêmica, busco constante aperfeiçoamento por meio de certificações, incluindo o <b>Google UX Design Professional Certificate</b>, que aprofundou meus conhecimentos em pesquisa com usuários, arquitetura da informação, wireframes, prototipação e testes de usabilidade.
+                            </p>
+                            <a class="btn black-pink-btn" target="_blank" href="https://drive.google.com/file/d/1GHTjT2JYpdlB93pwTIXIB5rPE8Sm4UJM/view?usp=sharing">Currículo</a>
+                        </div>
+                    </div>
+                    <div class="second-block">
+                        <div class="experience">
+                            <h3>Experiência</h3>
+                            <div class="item">
+                                <h4>Web Designer - Autônoma (2023-atualmente)</h4>
+                                <p>Criação de interfaces, landing pages e sites institucionais, desenvolvendo soluções que priorizam usabilidade, acessibilidade e identidade visual.</p>
+                            </div>
+                            <div class="item">
+                                <h4>Desenvolvedora Web - Lepidus (2021-2023)</h4>
+                                <p>Desenvolvimento e manutenção de interfaces de temas para revistas científicas, utilizando HTML, CSS, LESS, JavaScript e Figma.</p>
+                            </div>
+                        </div>    
+                        <div class="tags">
+                            <h3>Ferramentas de Trabalho</h3>
+                            <p class="btn">Figma</p>
+                            <p class="btn">FigJam</p>
+                            <p class="btn">Miro</p>
+                            <p class="btn">Photoshop</p>
+                            <p class="btn">Git</p>
+                            <p class="btn">Vercel</p>
+                            <p class="btn">VS Code</p>
+                            <p class="btn">ChatGpt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="about-section">
             <div>
                 <h1>Vamos criar algo incrível juntos?</h1>
                 <p>Você pode entrar em contato através de:<p>
                 <div class="contact-list">
                     <div class="item">
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="ph ph-phone-call"></i>
                         <div>
-                            <h2>Telefone/whatsapp:</h2> 
+                            <h3>Whatsapp:</h3> 
                             <p>(92) 99101-3577</p>
                         </div>
                     </div>
                     <div class="item">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="ph ph-envelope-simple"></i>                                                                                                                                                                                                                                                                                                                                                                                           
                         <div>
                             <h2>Email:</h2> 
                             <p>laisreisdejesus45@gmail.com</p>
@@ -175,25 +297,27 @@
             </div>
             <div class="form">
                 <h2>Envie uma mensagem</h2>
-                <form action="https://formsubmit.co/laisreisdejesus45@gmail.com" method="POST">
+                <form action="https://formsubmit.io/send/laisreisdejesus45@gmail.com" method="POST">
                     <label for="name">Nome *</label>
                     <input id="name" type="text" name="nome" placeholder="Digite seu nome" required>
                     <label for="email">Email *</label>
                     <input id="email" type="email" name="email" placeholder="Digite seu email" required>
                     <label for="mensagem">Mensagem *</label>
                     <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <input name="_formsubmit_id" type="text" style="display:none">
                     <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
-    <button id="backToTop" title="Go to top"><i class="fa fa-angle-up" style="font-size:25px;" aria-hidden="true"></i></button>
+    <button id="backToTop" title="Go to top">
+        <i class="ph ph-caret-up" style="font-size:25px;" aria-hidden="true"></i>
+    </button>
     <footer>
         <p>Carinhosamente desenvolvido por Laís Reis ♥</p>
         <p>@copyright 2025 - Todos os direitos reservados</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
