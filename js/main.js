@@ -11,19 +11,6 @@ mobileMenuIcon.onclick = function(){
   }
 }
 
-$('.slider').slick({
-  speed: 3000,            
-  autoplay: true,
-  autoplaySpeed: 0,       
-  cssEase: 'linear',      
-  slidesToShow: 3,        
-  slidesToScroll: 1,
-  infinite: true,         
-  arrows: false,          
-  dots: false,            
-  variableWidth: true     
-});
-
 // project filter
 
 $('.filter-btn').on('click', function(){
