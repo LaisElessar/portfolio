@@ -377,7 +377,7 @@ body{
                     display: flex;
                     margin: 15px 0;
                     
-                    h3,p{
+                    h2,p{
                         margin: 5px 0 5px 10px;
                     }
 
@@ -398,6 +398,12 @@ body{
                     }
                 }
                 
+            }
+
+            @media(max-width: 425px) {
+                width: 90%;
+                padding: 0;
+
             }
 
             @media(max-width: 900px) {
@@ -579,6 +585,10 @@ body{
                 font-size: 2rem;
             }
 
+            @media (max-width: 425px) {
+                margin-top: 50px;
+            }
+
             form{
                 display: flex;
                 flex-direction: column;
@@ -693,7 +703,8 @@ body{
 
     #contato{
         a{
-            color: #252525;
+            color: #000000;
+            font-weight: 600;
             text-decoration: none;
     
             &:hover{
