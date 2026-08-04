@@ -18,7 +18,7 @@ body {
     opacity: 1;
   }
 }
-body .material-symbols-outlined {
+body .hamburguerArea {
   display: none;
 }
 body #backToTop {
@@ -27,18 +27,17 @@ body #backToTop {
   bottom: 80px;
   right: 30px;
   z-index: 99;
-  font-size: 18px;
   border: none;
   outline: none;
-  background-color: #8F0069;
+  background-color: #ffd7e4;
+  border: 1px solid #ffd7e4;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 50px;
-  width: 60px;
 }
 body #backToTop:hover {
-  background-color: #3c3c3c;
+  border: 2px solid #8F0069;
 }
 body header {
   position: fixed;
@@ -65,10 +64,8 @@ body header figure {
     width: 100%;
     text-align: center;
   }
-  body header .material-symbols-outlined {
+  body header .hamburguerArea {
     display: inline-block;
-    font-size: 36px;
-    color: #252525;
   }
 }
 body header .site_nav_menu .site_nav_toggle {
@@ -306,7 +303,7 @@ body main section .contact-list .item p {
   margin: 5px 0 5px 10px;
 }
 body main section .contact-list .item img {
-  background-color: #8F0069;
+  background-color: #ffd7e4;
   border-radius: 50px;
   display: flex;
   padding: 10px;
