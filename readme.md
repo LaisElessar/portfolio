@@ -70,14 +70,6 @@ Durante o desenvolvimento foram considerados princípios de UX e UI, como:
 - Acessibilidade (WCAG)
 - Design centrado no usuário
 
-## 🚀 Demonstração
-
-A versão publicada do projeto está disponível em:
-
-🌐 **https://laisreis.vercel.app/**
-
-> Hospedado na Vercel.
-
 ## Destaques do projeto
 
 - Desenvolvido com HTML, CSS e JavaScript puro, sem frameworks.
